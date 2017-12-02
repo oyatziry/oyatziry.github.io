@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>KOALI: Fresh and Flawless Face Masks</title>
+		<meta charset = "utf-8" />
+		<link href="mybusiness.css" rel="stylesheet" type="text/css" />
+	</head>
+<body>
+<div id="main_container">
+    <header>
+      <!-- <h1>KOALI: Fresh and Flawless Face Masks</h1> -->
+    </header>
+    <hr />
+    
+	<div id="dropdown_menu">
+		<ul id="navbar">
+			<li><a href="#">Home</a></li>
+			<li><a href="mybusiness2.html">About Us</a></li>
+				<ul>
+					<li><a href="#"> Contact Us</a></li>
+				</ul>
+			<li><a href="#">Membership</a></li>
+				<ul>
+					<li><a href="#"> Reward Points</a></li>
+				</ul>
+			<li><a href="#">Our Face Masks</a></li>
+				<ul>
+					<li><a href="#"> For Oily Skin</a></li>
+					<li><a href="#"> For Dry Skin</a></li>
+					<li><a href="#"> For Combo Skin</a></li>
+				</ul>
+			<li><a href="order2.html">Order Form</a></li>
+		</ul>
+	</div>
+	<br /> <br />
+
+    <div id="sidebar">
+		<!--SECTION DESCRIBING TOP PRODUCTS-->
+		<h3> Koali's Top Rated Face Masks </h3>
+		<ul>
+			<li><a href="#" > Honey Goodness Mask </a></li>
+			<li><a href="#" > Muddy Mud Mask </a></li>
+			<li><a href="#" > Herbal Cucumber Mask </a></li>
+			<li><a href="#" > Black as Coal Mask </a></li>
+		</ul>
+		<!--LINKS OF RELATED PRODUCTS-->
+		<h3>You may also like...</h3>
+		<ul>
+			<li> <a href="http://www.lushusa.com/face/cleansers/dark-angels/9999906954.html" > Lush's Dark Angels Face and Body Cleanser </a> </li>
+			<li> <a href="https://www.origins.com/product/15346/36821/skincare/treat/face-masks/original-skin/retexturizing-mask-with-rose-clay" > Origin's Retexturizing Mask with Rose Clay </a> </li>
+			<li> <a href="http://www.glamglow.com/product/18842/36600/shop-all/youthmud-tinglexfoliate-treatment" > GlamGlow's YouthMud Face Mask </a> </li>
+		</ul>
+		<hr />
+		<!--W3C VALUDATION-->
+			<p><a href="http://validator.w3.org/check?uri=referer"><img
+	      		src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a></p>
+
+    </div>
+	
+    <div id="content">
+    	<h2>Order Form</h2>
+		<!--1st Fieldset: Customer Info-->
+		<fieldset>
+			<legend>Customer Information</legend>
+			<label>Name:
+				<input type="text" name="name"/>
+			</label>
+			<br />
+			<label>Street:
+				<input type="text" name="street"/>
+			</label>
+			<br />
+			<label>City:
+				<input type="text" name="city"/>
+			</label>
+			<br />
+			<label>State:
+				<input type="text" name="state"/>
+			</label>
+			<br />
+			<label>Zipcode:
+				<input type="text" name="zip code"/>
+			</label>
+			<br />
+			<label>Email Address:
+				<input type="text" name="zip code"/>
+			</label>
+		</fieldset>
+		<!--2nd Fieldset: Order Info-->
+		<fieldset>
+			<legend>Order Information</legend>
+			How did you find out about us?
+			<input type="radio" name="commercial" value="commercial"/> Commercial
+			<input type="radio" name="magazine ad" value="magazine ad"/> Magazine Ad
+			<input type="radio" name="other" value="other"/> Other
+			<br />
+			<input type="checkbox" name="email me" checked="checked"/> Send me emails about future products.
+			<br /> <br />
+			<table border="1">
+				<caption>Product List</caption>
+				<!--1st row-->
+				<tr>
+					<th>Product</th>
+					<th>Description</th>
+					<th>Price</th>
+					<th>Qty</th>
+				</tr>
+				<!--2nd Row-->
+				<tr>
+					<td>Muddy Mud Mask</td>
+					<td>
+					<p>Helps fight acne, reduces signs of aging, improves skins elasticity. 2oz</p>
+					</td>
+					<td>$18.99</td>
+					<td>
+						<input type="text" name="qty"/>
+					</td>
+				</tr>
+				<!--3rd Row-->
+				<tr>
+					<td>Black as Coal Mask</td>
+					<td>
+						<p>Clears dirt and oil from pores while fighting to visibly reduce them. 2oz</p>
+					</td>
+					<td>$18.99</td>
+					<td>
+						<input type="text" name="qty"/>
+					</td>
+				</tr>
+				<!--4th Row-->
+				<tr>
+					<td>Rosy Rose Mask</td>
+					<td>
+						<p>Calms sking and restores balance while nourishing and toning your face. 2oz</p>
+					</td>
+					<td>$18.99</td>
+					<td>
+						<input type="text" name="qty"/>
+					</td>
+				</tr>
+				<!--5th Row-->
+				<tr>
+					<td>Herbal Cucumber Mask</td>
+					<td>
+						<p>Helps soothe skin irritations and reduce swelling. 2oz</p>
+					</td>
+					<td>$18.99</td>
+					<td>
+						<input type="text" name="qty"/>
+					</td>
+				</tr>
+				<!--6th Row-->
+				<tr>
+					<td>Honey Goodness Mask</td>
+					<td>
+						<p>Anti-inflammatory and antibacterial compounds help decrease the apperance of scars while increasing tissue regeneration. 2oz</p>
+					</td>
+					<td>$18.99</td>
+					<td>
+						<input type="text" name="qty"/>
+					</td>
+				</tr>
+			</table>
+			Select a Credit Card
+			<select name="card type">
+				<option selected="selected" > Visa</option>
+				<option>American Express</option>
+				<option>MasterCard</option>
+				<option>Discover</option>
+			</select>
+			<br />
+			<label>Credit Card Number:
+				<input type="password" name="pw"/>
+			</label>
+		</fieldset>
+		<!--3rd FieldSet: Reset and Submit button-->
+		<fieldset>
+			<input type="reset" />
+			<input type="submit" value="Send" />
+		</fieldset>
+    </div> 
+
+    <hr /> 
+    <footer>
+           <p>Copyright &copy; 2017 KOALI</p>
+    </footer>
+    <br />
+  </div>
+</body>
+</html>
