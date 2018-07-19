@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+	<head>
+		<title> Simple Calculator | Yatziry Ortiz </title>
+
+		<script type="text/javascript">
+			<!-- 
+
+			var num1=""; //holds first number inputted
+			var num2=""; //holds second number inputted
+			var operator=""; //holds operation symbol
+			var result=""; //holds answer of computation
+
+			//Takes as argument a string or a number and displays it in the box in the window
+		    function display(num) {
+		        var node = document.getElementById("display");  
+				node.value=num;
+		    }
+
+		    function clickButton(symbol){
+		    	if(isNaN(symbol) === false || symbol === "."){ //is symbol another number? If decimal is inputed concatenate it as well
+		    		if(operator === "") { //we haven't pressed an operation so the first number is still being typed
+		    			if (symbol === "."){
+		    				for( var i=0; i < num1.length; i++){
+			    				if (num1.substr(i,1)==="."){ //check if there is a decimal in the number already
+			    					return; //if there is dont do anything
+			    				}
+			    			}
+		    			}
+			    		num1 += symbol;
+			    		display(num1);
+			    	}
+			    	else{ //allow num2 to be written
+			    		num2 += symbol;
+			    		display(num2);
+			    	}
+		    	}
+		    	else if(symbol === "="){  //is symbol an equals sign?
+		    		calculate();
+		    	}
+		    	else{
+		    		operator = symbol;  //is symbol an operator?
+		    	}
+		    }
+
+		    function calculate(){
+		    	if(num1!=="" && num2!==""){  //if both numbers are inputted then compute
+		    		if(operator === "/"){
+		    			result = (Number(num1) / Number(num2));
+		    			display(result);
+		    		}
+		    		else if(operator === "*"){
+		    			result = (Number(num1) * Number(num2));
+		    			display(result);
+		    		}
+		    		else if(operator === "-"){
+		    			result = (Number(num1) - Number(num2));
+		    			display(result);
+		    		}
+		    		else if(operator === "+"){
+		    			result = (Number(num1) + Number(num2));
+		    			display(result);
+		    		}
+		    	}
+		    	else{ //if just 1 number has been inputted do nothing
+		    		display(num1);
+		    	}
+		    }
+
+			-->
+		</script>
+
+	</head>
+	<body>
+		<h1> Four-Function Calculator </h1>
+
+		<form method="get" action="#">
+			<p>
+			<input type="text" id="display"/> <!-- display the top input line of the calculator -->
+			</p>
+		</form>
+
+		<form method="get" action="#">
+			<p>
+			<input type="button" value="7" onclick="clickButton('7')" />
+			<input type="button" value="8" onclick="clickButton('8')" />
+			<input type="button" value="9" onclick="clickButton('9')" /> 
+			<input type="button" value="/" onclick="clickButton('/')" /> <br /> 
+
+			<input type="button" value="4" onclick="clickButton('4')" />
+			<input type="button" value="5" onclick="clickButton('5')" />
+			<input type="button" value="6" onclick="clickButton('6')" /> 
+			<input type="button" value="*" onclick="clickButton('*')" /> <br />  
+
+			<input type="button" value="1" onclick="clickButton('1')" />
+			<input type="button" value="2" onclick="clickButton('2')" />
+			<input type="button" value="3" onclick="clickButton('3')" /> 
+			<input type="button" value="-" onclick="clickButton('-')" /> <br />
+
+			<input type="button" value="." onclick="clickButton('.')" />
+			<input type="button" value="0" onclick="clickButton('0')" />
+			<input type="button" value="=" onclick="clickButton('=')" />
+			<input type="button" value="+" onclick="clickButton('+')" /> <br />
+			</p>
+		</form>
+
+		<!--W3C VALUDATION-->
+			<p>
+				<a href="http://validator.w3.org/check?uri=referer">
+				<img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /> </a>
+			</p>
+
+	</body>
+</html>
