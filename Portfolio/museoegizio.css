@@ -5,11 +5,19 @@
 
 .navbar-brand{
     color: white;
-    font-family: 'PT Mono';
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter spacing: 2px;
 }
 
 .nav-item a{
-    font-family: 'PT Mono';
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter spacing: 2px;
 }
 
 .sidebar{
