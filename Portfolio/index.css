@@ -12,7 +12,11 @@
 }
 
 .nav-item a{
-    font-family: 'PT Mono';
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: upppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
 #about-section{
