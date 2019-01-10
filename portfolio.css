@@ -19,15 +19,39 @@
     letter-spacing: 2px;
 }
 
+.nav-item a:hover{
+    animation: fadeSmall 1s;
+}
+
+@keyframes fadeSmall{
+    0% {
+        opacity:  0.5;
+        transform: scale(0.9,0.9);
+      }
+      50% {
+        transform:  none;   
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
 #about-section{
     background-color: #457371;
     padding-bottom: 3%;
+}
+
+@keyframes fadeInUp{
+    from{ top: 40px; opacity: 0;}
+    to{ top: 0px; opacity: 1.0;}
 }
 
 .profile-picture{
     display: inline-block;
     width: 50%;
     box-sizing: unset;
+    position: relative;
+    animation: fadeInUp 2s;
 }
 
 .profile-picture img{
@@ -45,6 +69,8 @@
     display: inline-block;
     width: 40%;
     vertical-align: top;
+    position: relative;
+    animation: fadeInUp 2s;
 }
 
 section h1{
@@ -75,6 +101,10 @@ section p{
 .icons img{
     width: 50px;
     margin-left: 5%;
+}
+
+.icons img:hover{
+    animation: fadeSmall 1s;
 }
 
 .icons button{
@@ -137,4 +167,8 @@ button{
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     align-items: center;
+}
+
+button:hover{
+    animation: fadeSmall 1s;
 }
