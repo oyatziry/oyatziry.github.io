@@ -172,3 +172,11 @@ button{
 button:hover{
     animation: fadeSmall 1s;
 }
+
+.copy-right{
+    color: #457371;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    padding-bottom: 3%;
+}
