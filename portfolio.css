@@ -111,6 +111,8 @@ li a{
 
 li a:hover{
     animation: fadeSmall 1s;
+    text-decoration: none;
+    color: white;
 }
 
 #project-section{
