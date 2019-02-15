@@ -20,6 +20,23 @@
     letter-spacing: 2px;
 }
 
+.nav-item a:hover{
+    animation: fadeSmall 1s;
+}
+
+@keyframes fadeSmall{
+    0% {
+        opacity:  0.5;
+        transform: scale(0.9,0.9);
+      }
+      50% {
+        transform:  none;   
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
 .sidebar{
     display: inline-block;
     position: fixed;
