@@ -184,6 +184,10 @@ button{
     margin-bottom: 1em;
 }
 
+#end_buttons button:hover{
+    animation: fadeSmall 1s;
+}    
+
 #back{
     display: block;
     text-align: center;
