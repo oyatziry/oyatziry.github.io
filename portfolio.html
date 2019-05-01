@@ -1,89 +1,140 @@
-<head> 
-    <title> Yatziry Ortiz </title>
-    <link rel="icon" href="Favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link href="portfolio.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <!-- NAV BAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <a class="navbar-brand" style = "font-size: 18px; " href="portfolio.html"> Yatziry Ortiz・ UX Designer </a>
-    <!--3 BAR BUTTON-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- 3 BAR COLLAPSE-->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-        <!-- LINKS TO PAGES-->
-        <li class="nav-item active">
-            <a class="nav-link" href="portfolio.html"> Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" href="https://www.dropbox.com/s/wpf72a5tcs1gm8a/YO_Resume_UXD_R.pdf?dl=0" target="_blank"> Resume <span class="sr-only">(current)</span></a>
-        </li>
-        </ul>
-    </div>
-    </nav>
-    <!--ABOUT SECTION-->
-    <div id="about-section">
-        <div class="content">
-            <section>
-                <h1> Hello </h1>
-                <article>
-                    <p> I am a user experience designer with user research and programming experience. I am skilled in transforming user thinking into design, and breaking down complex problems into simple and elegant solutions. I recently graduated from the University of California, Los Angeles (UCLA) with a B.S. Cognitive Science and a specialization in Computing. With experience designing and executing cognitive psychology studies on memory and attention, I use my background in cognitive science to ensure I am always thinking of the user when delivering an intuitive and user friendly product.   <br> <br>  Please look around and reach out as you see fit. I would love to join your company or next project.  </p>
-                </article>
-            </section>
-            <div class="hyperlinks">
-                <ul>
-                    <li> <a href="mailto:oyatziry@gmail.com"> Email </a> </li>
-                    <li> <a href="https://www.linkedin.com/in/yatziryortiz/" target="_blank"> LinkedIn </a> </li>
-                    <li> <a href="https://github.com/oyatziry" target="_blank"> Github </a> </li>
-                </ul>
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <!-- <link rel="icon" href="Favicon.png"> -->
+        <link href="portfolio.css" rel="stylesheet" type="text/css">
+        <title> Yatziry Ortiz </title>
+
+        <!-- text animation -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script>
+       $(document).ready(function(){
+            $("#top").fadeOut(function() {
+                $(this).text("Storyteller.")}).fadeIn(2000);
+            $("#middle").fadeOut(1000, function() {
+                $(this).text("Problem solver.")}).fadeIn(3000);
+            $("#bottom").fadeOut(2000, function() {
+                $(this).text("Human-centered designer.")}).fadeIn(3000);
+            $("#top").fadeOut(function() {
+                $(this).text("Projects.")}).fadeIn().wrap('<a href="#project-section"> </a>');
+            $("#middle").fadeOut(function() {
+                $(this).text("Resume.")}).fadeIn().wrap('<a href="https://www.dropbox.com/s/wpf72a5tcs1gm8a/YO_Resume_UXD_R.pdf?dl=0" target="_blank"> </a>');
+            $("#bottom").fadeOut(function() {
+                $(this).text("About me.")}).fadeIn().wrap('<a href="#about-me"> </a>');
+        });
+       </script>
+    </head>
+    <body>
+
+        <!-- NAV BAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <a class="navbar-brand" style = "font-size: 18px; " href="index.html"> Yatziry Ortiz </a>
+        <!--3 BAR BUTTON-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 3 BAR COLLAPSE-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+            <!-- LINKS TO PAGES-->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.dropbox.com/s/wpf72a5tcs1gm8a/YO_Resume_UXD_R.pdf?dl=0" target="_blank"> Resume <span class="sr-only">(current)</span></a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="header">
+            <h2> Hello, I'm Yatziry. </h2>
+            <div class="change-text">
+                <div id="top"> Team Leader. </div>
+                <div id="middle"> Public Speaker </div>
+                <div id="bottom"> Critical thinker. </div>
             </div>
         </div>
-        <div class="profile-picture">
-            <img src="honeycomb_profile.png" alt="Honeycomb Profile" id="honeycomb" class="img-fluid">
-        </div>
-    </div>
-    <div id="project-section">
-        <!-- TUTORFLY PROJECT -->
-        <div id="tutorfly_content">
-            <h1> Tutorfly Inc. </h1>
-            <p> January 2018 - June 2018 </p>
-            <p> Tutorfly is a tutoring platform whose mission is to provide an educational alternative to traditional classroom settings through peer-to-peer tutoring. </p>
-            <p> As the UI/UX intern, I re-evalutated the web experience to improve navigation and create a seamless user interface. One way I did this was by redesigning the Tutorfly blog page to make it more practical and effective. </p>
-            <!-- BUTTON -->
-            <a href="tutorfly_casestudy.html">
-                <button> Learn More </button>
-            </a>
-        </div>
-        <!-- TUTORFLY VIDEO-->
-        <div id="tutorfly_video">
-            <video id="blog_video" name="Tutorfly Blog Redesign" src="tutorflyVideo2.mov" autoplay loop muted></video>
-        </div>
-        <!-- MUSEO EGIZIO PROJECT -->
-        <div id="museo">
-            <div id="museo_content">
-                <h1> Museo Egizio </h1>
-                <p> April 2018 - June 2018 </p>
-                <p> Museo Egizio is an Egyptian museum located in Italy and is partners with UCLA's Cotsen Institute of Archeology. </p>
-                <p> As the UX designer and researcher, I prototyped a versatile mobile application which improved user engagement through social experiences such as VR viewing, scavenger hunts, and augmented photo filters. My prototyped was well-received by stakeholders who recommended it for mobile application implementation. </p>
-                <!-- BUTTON -->
-                <a href="museoegizio_casestudy.html">
-                    <button> Learn More </button>
-                </a>
+
+        <!-- Projects -->
+        <div class="project-section" id="project-section">
+            <!-- Tutorfly -->
+            <div class="row" style="position: relative;">
+                <!-- Tutorfly content -->
+                <div class="col-md-5 project-content">
+                    <div class="content">
+                        <h1> Tutorfly Inc. </h1>
+                        <p> January 2018 - June 2018 </p>
+                        <p> Tutorfly is a tutoring platform whose mission is to provide an educational alternative to traditional classroom settings through peer-to-peer tutoring. As the UI/UX intern, I was responsible for re-evalutating the web experience to improve navigation and create a seamless user interface. </p>
+                        <p> One of my biggest tasks was to redesign the Tutorfly blog page to make it more practical and effective. </p>
+                        <!-- Tutorfly button -->
+                        <a href="tutorfly_casestudy.html">
+                            <button> Learn More </button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Tutorfly video -->
+                <div class="col-md-7 project-video">
+                        <video id="blog_video" name="Tutorfly Blog Redesign" src="tutorflyVideo2.mov" autoplay loop muted></video>
+                </div>
             </div>
-            <!-- MUSEO VIDEO-->
-            <div id="museo_video">
-                <video id="app_video" name="Museo Egizio Mobile App" src="museoVideo2.mov" autoplay loop muted></video>
+            <!-- Museo Egizio -->
+            <div class="row">
+                <!-- Museo content -->
+                <div class="col-md-5 project-content">
+                    <div class="content">
+                        <h1> Museo Egizio </h1>
+                        <p> April 2018 - June 2018 </p>
+                        <p> Museo Egizio is an Egyptian museum located in Italy and is partners with UCLA's Cotsen Institute of Archeology. They are currently experimenting with mobile applications to enhance the modern museum viewing experience.  </p>
+                        <p> My role in this project was to propose a versatile application that would engage users in the museum's collections through social experiences. </p>
+                        <!-- Museo button -->
+                        <a href="museoegizio_casestudy.html">
+                            <button> Learn More </button>
+                        </a>
+                    </div>    
+                </div>
+                <!-- Museo video -->
+                <div class="col-md-7 project-video">
+                        <video id="app_video" name="Museo Egizio Mobile App" src="museoVideo2.mov" autoplay loop muted></video>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="copy-right"> < >  YATZIRY ORTIZ 2018  < / > </div>
-    </footer>
-</body>
+
+        <!-- About Me Section -->
+        <div class="about-me" id="about-me">
+            <div class="row">
+                <!-- profile picture -->
+                <div class="col-md-5 profile">
+                    <img src="honeycomb_profile.png" alt="Honeycomb Profile" id="profile-picture" class="img-fluid">
+                </div>
+                <!-- about me content -->
+                <div class="col-md-5 about-me-content">
+                    <h2> About Me. </h2> 
+                    <p>
+                        I am a user experience designer with user research and programming experience. I am skilled in transforming user thinking into design, and breaking down complex problems into simple and elegant solutions. 
+                    </p>
+                    <p>
+                        I recently graduated from the University of California, Los Angeles (UCLA) with a B.S. Cognitive Science and a specialization in Computing. With experience designing and executing cognitive psychology studies on memory and attention, I use my background in cognitive science to ensure a human-centered design approach to products. 
+                    </p>
+                    <p>
+                        Please look around and reach out as you see fit. I would love to join your company or next project. 
+                    </p>
+                    <div class="hyperlinks">
+                        <ul>
+                            <li> <a href="mailto:oyatziry@gmail.com"> <button class="aboutButton"> Email </button> </a> </li>
+                            <li> <a href="https://www.linkedin.com/in/yatziryortiz/" target="_blank"> <button class="aboutButton"> LinkedIn </button> </a> </li>
+                            <li> <a href="https://github.com/oyatziry" target="_blank"> <button class="aboutButton"> Github </button> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
