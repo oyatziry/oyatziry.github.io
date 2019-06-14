@@ -1,0 +1,233 @@
+.navbar{
+    background-color: #457371;  
+}
+
+.navbar-brand{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.nav-item a{
+    font-family: sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.nav-item a:hover{
+    animation: fadeSmall 1s;
+}
+
+@keyframes fadeSmall{
+    0% {
+        opacity:  0.5;
+        transform: scale(0.9,0.9);
+      }
+      50% {
+        transform:  none;   
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+.intro-wrapper{
+  background-color: #457371;
+  padding: 3% 5% 5% 5%;
+}
+
+.intro-wrapper p{
+  font-size: 16.5px;
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 5%;
+}
+
+h5{
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+p{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+}
+
+.col-md-9{
+  color: white;
+  padding:0;
+}
+
+.hr-top{
+  border: none;
+  height: 4px;
+  color: white;
+  background-color: white;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  color: white;
+  background-color: white;
+  margin-top: 0.50em;
+  margin-bottom: 0.40em;
+}
+
+.project-info h5{
+  color: white;
+}
+
+.project-info p{
+  color: white;
+  line-height: 1.10;
+}
+
+.skip-to p{
+  color: white;
+}
+
+.skip-to a{
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.skip-to a:hover{
+  animation: fadeSmall 1s;
+}
+
+.image-wrapper{
+  background-color: white;
+  padding: 2% 2% 2% 2%;
+}
+
+.content-wrapper{
+  background-color: white;
+  padding: 0 15% 0 15%;
+}
+
+#wireframe-sketch{
+  height: 100%;
+  width: 100%;
+  float: right;
+}
+
+#wireframe{
+  height: 100%;
+  width: 100%;
+}
+
+#problem-img{
+  height: 70%;
+  width: 70%;
+  margin: auto;
+}
+
+#cards{
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  box-shadow: 2px 2px 7px grey;
+}
+
+#style-guide{
+  height: 60%;
+  width: 60%;
+  margin: auto;
+  box-shadow: 2px 2px 7px grey;
+}
+
+#wireframe-transition{
+  height: 30%; 
+  width: 30%;
+  margin: auto;
+  box-shadow: 2px 2px 7px grey;
+}
+
+#sketch-ia{
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}
+
+.prototype img{
+  height: 100%;
+  width: 100%;
+}
+
+.caption{
+  color: grey;
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+button{
+  cursor: pointer;
+  width: 175px;
+  border: none;
+  background: #457371;
+  padding: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: .75em;
+  letter-spacing: .2em;
+  color: white;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+#end_buttons{
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#end_buttons button{
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+#end_buttons button:hover{
+  animation: fadeSmall 1s;
+}
+
+#back{
+  display: block;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: .9em;
+  letter-spacing: .2em;
+  text-decoration: underline;
+}
+
+a{
+  color: black;
+}
+
+.copy-right{
+  color: #457371;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 1%;
+  font-weight: 100;
+  letter-spacing: 0.8px;
+}
