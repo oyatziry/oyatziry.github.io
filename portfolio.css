@@ -80,6 +80,7 @@ a:hover{
 .content{
     position: absolute;
     bottom: 0;
+    padding-bottom: 12%;
 }
 
 .project-video{
@@ -98,7 +99,10 @@ a:hover{
 }
 
 #app_video{
-    width: 100%;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 button{
